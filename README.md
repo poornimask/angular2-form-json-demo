@@ -1,4 +1,4 @@
-# angular2-form-json-demo
+# angular2-form-demo
 This is simaple Form in angular2
 It has services and Directives used to display course name and authours name
 It has used autogrow attribute for input box
