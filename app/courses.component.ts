@@ -1,5 +1,5 @@
 
-import {Component} from 'angular2/core'
+import {Component} from 'angular2/core';
 
 @Component ({
     selector: 'courses',
@@ -15,6 +15,6 @@ import {Component} from 'angular2/core'
 })
 
 export class CoursesComponent{
-    title="the title of course page";
+    title = "the title of course page";
     courses = ["Course1","Course2","Course3"];
 }
