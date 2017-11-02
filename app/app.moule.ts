@@ -1,4 +1,4 @@
-import { CoursesService } from './courses.service';
+import { CoursesService } from './course.service';
 import { CoursesComponent } from './courses.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
