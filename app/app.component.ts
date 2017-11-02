@@ -1,12 +1,10 @@
-import {Component} from 'angular2/core';
-import {CoursesComponent} from './courses.component';
-import {AuthorsComponent} from './author.component';
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1> <courses></courses> <authors></authors>',
-    directives : [CoursesComponent, AuthorsComponent]
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent { 
-
+export class AppComponent {
+  title = 'Angular app';
 }
