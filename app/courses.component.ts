@@ -1,24 +1,24 @@
 
-import {Component} from 'angular2/core';
-import {CourseService} from './course.service';
+
+import {Component} from '@angular/core';
+import { CoursesService } from './courses.service';
 
 @Component ({
     selector: 'courses',
     template : `
-        <h2>Courses</h2>
-        {{title}}
-        <ul>
-        <li *ngFor="#course of courses">
-        {{course}}
-        <li>
-        </ul>
-    `,
-    Providers : [CourseService]
+    <h2>courses</h2>
+    <ul>
+    <li *ngFor="let course of courses">
+    {{ course }}
+    </li>
+    </ul>
+    `
 })
-
 export class CoursesComponent{
-    title = "the title of course page";
+    title = "List of Courses";
     courses;
-    constructor (courseSerice : CourseService){
-        this.courses = courseService.getCourses();
+
+    constructor ( service : CoursesService){
+        this.courses = service.getCourse();
+    }
 }
